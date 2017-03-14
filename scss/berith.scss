@@ -1,0 +1,203 @@
+// =========
+// This file is a custom file that loads all files. Each non-base layer
+// can be disabled.
+//
+// Do not name this file "STARTER.scss". This file should be named
+// THEMENAME.scss.
+//
+// This application file (THEMENAME.scss) is where all the partials are
+// imported.
+//
+// Theme styles are categorized using SMACSS standards. They utilize
+// categorization of styles into various categories. Those categories are the
+// following:
+//
+// - Base: CSS reset/normalize plus HTML element styling.
+// - Layout: Macro arrangement of a web page, including any grid systems.
+// - Modules: Dictate minor layout modules or reusable elements.
+// - States: Describe the appearance of a module in various states.
+// - Theme: Specific customizations for your subtheme.
+// For more information about this new Drupal css file standard, please review
+// the following:
+// - https://drupal.org/node/1887922
+// - http://smacss.com/
+// =========
+
+// Make sure the charset is set appropriately
+@charset 'utf-8';
+
+//This is your _settings.scss file where you can override foundation variables.
+@import 'settings';
+
+// Core
+// The following imports bootstrap the theme.
+@import 'foundation';
+//@import 'motion-ui';
+
+// Set flex to true to enable the new Foundation 6 flex grid.
+$flex: false;
+@include foundation-everything($flex);
+
+//@include motion-ui-transitions;
+//@include motion-ui-animations;
+
+
+// Components
+
+
+// Import our mixins early so they can be used by other partials.
+// Optional.
+//@import 'base/mixins';
+
+// Common file is where you place common utility classes to extend or
+// parametrics.
+// Optional.
+// @import 'base/common';
+
+// Drupal specific styles (to fix Drupalisms).
+@import 'base/drupal';
+
+// Styling for elements.
+// Optional.
+// @import 'base/elements';
+
+// Layout
+// Each section of the document has it's own partial seperated out to improve
+// developer experience. Additionally, grids can be declared in layouts as well.
+@import 'layout/header';
+@import 'layout/main';
+@import 'layout/aside';
+@import 'layout/footer';
+
+// Modules
+// @import 'modules/block';
+// @import 'modules/button';
+
+// States
+// @import 'states/collapse';
+
+// Themes
+// @import 'theme/button-light';
+
+// Older IE support
+// @import 'vendor/ie';
+
+.hero {
+  background: #e9eef7 url('../images/flower.jpg');
+  overflow: hidden;
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  padding: 10em 0 12em 0;
+  -moz-box-shadow: 0 0 1000px 1000px rgba(0, 0, 0, 2.5) inset;
+  -webkit-box-shadow: 0 0 1000px 1000px rgba(0, 0, 0, 0.5) inset;
+  box-shadow: 0 0 1000px 1000px rgba(0, 0, 0, 0.5) inset;
+  margin-bottom: 3rem;
+
+  div {
+    color:#FFF;
+  }
+}
+
+header {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  background-color: #FFF;
+}
+
+.top-bar {
+  background-color: #FFF !important;
+
+  ul {
+    background-color: #FFF !important;
+  }
+
+  .top-bar-right {
+    margin-top: 0.6rem;
+  }
+
+  .top-bar-left {
+    a {
+      font-size: 150%;
+    }
+  }
+}
+
+section.block-berith-content {
+  div.field-node--field-image {
+    float:left;
+    margin-right: 2rem;
+  }
+}
+
+div.calendar {
+  margin-bottom: 2rem;
+
+  @media (min-width: 40.063em) {
+    border-left: thick solid #76879D;
+    padding-left:1rem;
+  }
+  @media only screen and (max-width: 40em) {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: thin solid #76879D;
+  }
+
+  div.monthyear {
+    background-color: #7E5D7E;
+    color: #FFF;
+    font-weight: bold;
+    border-radius: 1rem;
+  }
+
+  div.weekday, div.monthday {
+    width: 14%;
+    float:left;
+    display: inline-block;
+    margin-bottom: 0.2rem;
+  }
+
+  div.weekday, div.appointment {
+    font-weight:bold;
+  }
+
+  div.appointment {
+    background-color:#D1E5F2;
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    cursor: pointer;
+  }
+
+  div.appointment.active {
+    background-color: #1779BA;
+    border-bottom-right-radius: 0 !important;
+  }
+
+  div.appointment span {
+    width: 100%;
+    display: block;
+  }
+
+  div.appointment div {
+    position: absolute;
+    z-index: 1;
+    width: 5rem;
+    background-color: #1779BA;
+    padding: 0.2rem;
+    border-bottom-right-radius: 1rem;
+  }
+
+  div.appointment div a {
+    color:#FFF;
+  }
+
+  div.appointment div a:hover {
+    color:#DDD;
+  }
+
+  #prevMonth, #nextMonth {
+    color:#FFF;
+  }
+}
