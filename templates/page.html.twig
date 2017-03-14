@@ -1,4 +1,4 @@
-<header class="frontpage">
+<header class="{% if is_front %}frontpage{% else %}node{% endif %}">
   {% if page.header %}
     <div class="row collapsed">
       {{ page.header }}
@@ -6,15 +6,17 @@
   {% endif %}
 </header>
 <div class="main">
-  <section class="hero">
-    <div class="row">
-      <div class="small-12 columns">
-        <h2>Kæmp imod sensitiviteten<br/>
-          - Meld dig under Berith's faner</h2>
+  {% if is_front %}
+    <section class="hero">
+      <div class="row">
+        <div class="small-12 columns">
+          <h2>Kæmp imod sensitiviteten<br/>
+            - Meld dig under Berith's faner</h2>
+        </div>
       </div>
-    </div>
-  </section>
-  <section class="frontpage">
+    </section>
+  {% endif %}
+  <section class="{% if is_front %}frontpage{% else %}node{% endif %}">
     <div class="row">
       <div class="small-12 large-8 columns">
         {{ page.content }}
