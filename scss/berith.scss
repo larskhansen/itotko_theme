@@ -135,11 +135,11 @@ section.block-berith-content {
 div.calendar {
   margin-bottom: 2rem;
 
-  @media (min-width: 40.063em) {
+  @media (min-width: 64em) {
     border-left: thick solid #76879D;
     padding-left:1rem;
   }
-  @media only screen and (max-width: 40em) {
+  @media only screen and (max-width: 64em) {
     margin-top: 2rem;
     padding-top: 2rem;
     border-top: thin solid #76879D;
