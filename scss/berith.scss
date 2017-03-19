@@ -189,9 +189,22 @@ div.calendar, section.block-berith-informationomsession {
     cursor: pointer;
   }
 
-  div.appointment.active {
+  div.appointment.active, div.today.appointment.active {
     background-color: #1779BA;
     border-bottom-right-radius: 0 !important;
+  }
+
+  div.today {
+    border: 1px solid #3AB07C;
+  }
+
+  div.today.appointment {
+    background-color:#D1E5F2;
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    border-top-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    cursor: pointer;
   }
 
   div.appointment span {
