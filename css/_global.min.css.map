@@ -1,9 +1,0 @@
-{
-	"version": 3,
-	"file": "_global.min.css",
-	"sources": [
-		"../scss/_global.scss"
-	],
-	"names": [],
-	"mappings": ""
-}
