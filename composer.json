@@ -1,7 +1,7 @@
 {
     "name": "larskhansen/itotko_theme",
     "description": "Theme for itotko.dk",
-    "type": "drupal-theme",
+    "type": "drupal-custom-theme",
     "keywords": ["Drupal"],
     "license": "GPL-2.0+",
     "homepage": "http://itotko.dk",
