@@ -1,0 +1,15 @@
+{
+    "name": "larskhansen/itotko_theme",
+    "description": "Theme for itotko.dk",
+    "type": "drupal-theme",
+    "keywords": ["Drupal"],
+    "license": "GPL-2.0+",
+    "homepage": "http://itotko.dk",
+    "minimum-stability": "dev",
+    "authors": [
+    {
+        "name": "Lars K. Hansen (larskhansen)",
+        "homepage": "https://la.rshansen.dk",
+        "role": "Maintainer"
+    }
+}
