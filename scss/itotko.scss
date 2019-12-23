@@ -81,3 +81,80 @@ $flex: false;
 
 // Older IE support
 // @import 'vendor/ie';
+
+.hero {
+    background: #e9eef7 url("../images/solnedgang.jpg");
+    overflow: hidden;
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    padding: 10em 0 12em 0;
+    -moz-box-shadow: 0 0 1000px 1000px #000 inset;
+    -webkit-box-shadow: 0 0 1000px 1000px rgba(0, 0, 0, 0.5) inset;
+    box-shadow: 0 0 1000px 1000px rgba(0, 0, 0, 0.5) inset;
+    margin-bottom: 3rem;
+
+    div {
+        color: #FFF;
+        margin-top: 4rem;
+        margin-bottom: -4rem
+    }
+}
+
+@media (max-width: 63em) {
+
+    header h1 {
+        padding-top: .4rem;
+        font-size: 1.3rem;
+        margin-bottom: 0rem !important;
+    }
+}
+
+div.field-node--field-tags div.field-item {
+    display: inline-block;
+    float: left;
+    padding: 0.3rem 0.5rem
+}
+
+div.field-node--field-image {
+    float: none !important;
+    clear: both;
+    display: block
+}
+
+header.node {
+    border-bottom: thin solid #76879D
+}
+
+.top-bar {
+    background-color: #FFF !important;
+    width: 100%
+    @media (max-width: 63em) {
+      border-bottom: thin solid #76879D;
+    }
+
+    ul {
+        background-color: #FFF !important
+    }
+
+    .top-bar-right {
+        margin-top: 0.6rem
+    }
+
+    .top-bar-left a {
+        font-size: 150%
+    }
+}
+
+section.node {
+    margin-top: 7rem
+}
+
+h1 {
+    font-size: 2.5rem
+}
+
+section.block-itotko-content div.field-node--field-image {
+    float: left;
+    margin-right: 2rem
+}
