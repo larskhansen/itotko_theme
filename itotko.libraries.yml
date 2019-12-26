@@ -2,6 +2,6 @@ global:
   version: VERSION
   css:
     base:
-      css/itotko.min.css: {}
+      css/itotko.css: {}
   js:
     js/itotko.js: {}

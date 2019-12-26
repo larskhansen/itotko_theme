@@ -99,7 +99,8 @@ gulp.task('sass', ['clean:css'], function () {
 // Clean CSS files.
 gulp.task('clean:css', function () {
   return del([
-    options.theme.css + '**/*.min.css'
+    options.theme.css + '**/*.css',
+    options.theme.css + '**/*.map'
   ], {force: true});
 });
 
