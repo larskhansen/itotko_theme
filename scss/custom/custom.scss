@@ -11,12 +11,16 @@ body {
     -moz-box-shadow: 0 0 1000px 1000px #000 inset;
     -webkit-box-shadow: 0 0 1000px 1000px rgba(0, 0, 0, 0.5) inset;
     box-shadow: 0 0 1000px 1000px rgba(0, 0, 0, 0.5) inset;
-    margin-bottom: 3rem
+    margin-bottom: 3rem;
 
     div {
       color: #FFF;
       margin-top: 4rem;
-      margin-bottom: -4rem
+      margin-bottom: -4rem;
+
+      h2.front {
+        font-size: 2.5rem;
+      }
     }
   }
 
