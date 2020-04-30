@@ -1,46 +1,24 @@
-name: itotko
-description: "Custom sub-theme for itotko.dk"
 core: 8.x
 type: theme
-base theme: zurb_foundation
+base theme: bootstrap
 
-# Image appears on admin/appearance
-# screenshot: images/screenshot.jpg
-
-# Uncomment these lines and change "STARTER" to your theme name if you
-# need to add custom CSS or JS
-libraries:
- - itotko/global
-
-# Regions are output in the page.html.twig
+name: 'itotko'
+description: 'A Drupal Bootstrap 3 based sub-theme.'
+package: 'Bootstrap'
 
 regions:
-  meta_header: 'Meta Header'
-  header: Header
-  help: Help
+  navigation: 'Navigation'
+  navigation_collapsible: 'Navigation (Collapsible)'
+  header: 'Top Bar'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  content: 'Content'
+  sidebar_first: 'Primary'
+  sidebar_second: 'Secondary'
+  footer: 'Footer'
   page_top: 'Page top'
   page_bottom: 'Page bottom'
-  highlighted: Highlighted
-  content: Content
-  sidebar_first: 'Left Sidebar'
-  sidebar_second: 'Right Sidebar'
-  footer_first: 'Footer first column'
-  footer_middle: 'Footer middle column'
-  footer_last: 'Footer last column'
-  left_off_canvas: 'Left off canvas'
-  right_off_canvas: 'Right off canvas'
-regions_hidden:
-  page_top: 'Page Top'
-  page_bottom: 'Page bottom'
 
-# Hidden regions
-# regions_hidden[]: Page top
-# regions_hidden[]: Page bottom
-
-features:
-  - logo
-  - name
-  - slogan
-  - favicon
-  - comment_user_picture
-  - node_user_picture
+libraries-extend:
+  bootstrap/framework:
+    - itotko/framework
