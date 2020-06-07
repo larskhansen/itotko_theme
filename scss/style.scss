@@ -122,8 +122,8 @@ body {
     margin-top: 7rem
   }
 
-  h1.page-header {
-    body.path-node & {
+  &.path-node {
+    h1.page-header {
       margin-top: 2.5rem !important;
     }
   }
