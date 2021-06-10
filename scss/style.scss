@@ -140,4 +140,10 @@ body {
     float: left;
     margin-right: 2rem
   }
+
+  div.field--name-field-tags {
+    div.field--item {
+      visibility: hidden;
+    }
+  }
 }
