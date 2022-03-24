@@ -1,6 +1,6 @@
-name: Itotko
+name: itotko
 type: theme
-description: 'Itotko subtheme based on Bootstrap 5 theme.'
+description: 'itotko subtheme based on Bootstrap 5 theme.'
 core_version_requirement: '^8.9 || ^9'
 'base theme': bootstrap5
 libraries:
