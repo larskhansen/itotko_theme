@@ -30,10 +30,6 @@ body {
     background-color:#FFF !important;
   }
 
-  div.main-container {
-    margin-top: 6rem !important;
-  }
-
   .hero {
     background: #e9eef7 url("../images/solnedgang.jpg");
     overflow: hidden;
@@ -46,25 +42,21 @@ body {
     box-shadow: 0 0 1000px 1000px rgba(0, 0, 0, 0.5) inset;
     margin-bottom: 3rem;
 
-    div {
-      color: #FFF;
-      margin-top: 4rem;
-      margin-bottom: -4rem;
-
       h2 {
+        color: #FFF;
         font-size: 1.25rem;
         line-height: 1.4;
         margin-top: 0;
         margin-bottom: .5rem;
       }
       h2.front {
+        color: #FFF;
         font-size: 2.5rem;
-        @media (max-with: 63em) {
+        padding: 0 13rem;
+        @media (max-width: 63em) {
           font-size: 2rem;
-          padding-left: 1rem;
         }
       }
-    }
   }
 
   header {
@@ -85,22 +77,6 @@ body {
       font-size: 1.3rem;
       margin-bottom: 0rem !important
     }
-  }
-
-  div.field--name-field-tags {
-    visibility: hidden;
-  }
-
-  div.field-node--field-tags div.field-item {
-    display: inline-block;
-    float: left;
-    padding: 0.3rem 0.5rem
-  }
-
-  div.field-node--field-image {
-    float: none !important;
-    clear: both;
-    display: block
   }
 
   .top-bar {
@@ -146,5 +122,10 @@ body {
     div.field--item {
       visibility: hidden;
     }
+  }
+
+  div.region-content {
+    max-width: 106rem;
+    padding: 0 13rem;
   }
 }
