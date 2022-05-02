@@ -24,6 +24,20 @@ body {
       padding: 1rem 3rem;
     }
     background-color: #FFF !important;
+
+    ul.navbar-nav {
+      display: block !important;
+
+      li.nav-item {
+        float: left;
+
+        .dropdown-menu {
+          position: absolute;
+          z-index: 1;
+          overflow: hidden;
+        }
+      }
+    }
   }
 
   li.sf-depth-2 {
