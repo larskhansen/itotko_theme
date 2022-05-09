@@ -31,6 +31,12 @@ body {
       li.nav-item {
         float: left;
 
+        &:hover {
+          .dropdown-menu {
+            @extend .show;
+          }
+        }
+
         .dropdown-menu {
           position: absolute;
           z-index: 1;
