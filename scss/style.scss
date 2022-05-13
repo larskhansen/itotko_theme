@@ -41,6 +41,18 @@ body {
           position: absolute;
           z-index: 1;
           overflow: hidden;
+
+          li.nav-item {
+            width: 100%;
+            display: block;
+
+            a.dropdown-item {
+              &:hover {
+                width: 100%;
+                display: block;
+              }
+            }
+          }
         }
       }
     }
