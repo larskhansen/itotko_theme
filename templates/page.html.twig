@@ -58,9 +58,9 @@ set footer_classes = ' ' ~
 
 <header class="navbar">
   {{ page.header }}
-  {% if page.nav_branding or page.nav_main or page.nav_additional %}
+  {% if page.nav_branding or page.nav_main or page.main %}
   <nav class="{{ nav_classes }}">
-    <div class="{{ b5_top_container }} d-flex">
+    <div class="d-flex">
       {{ page.nav_branding }}
 
       <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
