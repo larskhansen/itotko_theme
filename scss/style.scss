@@ -10,46 +10,70 @@
 @import '../../../../themes/contrib/bootstrap5/scss/style';
 
 body {
-  background-color: #f3f2f2;
+
+  @extend .bg-light;
 
   header.navbar {
-    position: fixed !important;
-    z-index: 1;
-    top: 0;
-    width: 100% !important;
-    max-width: none !important;
-    margin: 0 auto !important;
-    padding: 1rem 13rem;
-    @media (max-width: 63em) {
-      padding: 1rem 3rem;
-    }
-    background-color: #FFF !important;
+    nav.navbar {
+      padding-right: var(--bs-gutter-x,0.75rem);
+      padding-left: var(--bs-gutter-x,0.75rem);
+      margin-right: auto;
+      margin-left: auto;
+      max-width: 1320px;
+      width: 100%;
 
-    ul.navbar-nav {
-      display: block !important;
+      #navbarSupportedContent {
+        @extend .bg-light;
+      }
 
-      li.nav-item {
-        float: left;
-
-        &:hover {
-          .dropdown-menu {
-            @extend .show;
-          }
+      @media (max-width: 63em) {
+        button.navbar-toggler {
+          max-height: 3rem;
         }
 
-        .dropdown-menu {
-          position: absolute;
-          z-index: 1;
-          overflow: hidden;
-
+        // We want the menu on its own index in the mobile view
+        #navbarSupportedContent {
           li.nav-item {
-            width: 100%;
-            display: block;
+            clear: both;
 
-            a.dropdown-item {
-              &:hover {
-                width: 100%;
-                display: block;
+            .dropdown-toggle::after {
+              display: none !important;
+            }
+            ul.dropdown-menu {
+              display: block;
+              position: relative !important;
+              z-index: 1;
+              border: 0 !important;
+              background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity)) !important;
+            }
+          }
+        }
+      }
+
+      ul.navbar-nav {
+        display: block !important;
+
+        li.nav-item {
+          float: left;
+
+          &:hover, &:active {
+            .dropdown-menu {
+              @extend .show;
+            }
+          }
+          .dropdown-menu {
+
+            position: absolute !important;
+
+            li.nav-item {
+              width: 100%;
+              display: block;
+
+              a.dropdown-item {
+                &:hover {
+                  width: 100%;
+                  display: block;
+                }
               }
             }
           }
@@ -58,11 +82,7 @@ body {
     }
   }
 
-  li.sf-depth-2 {
-    background-color:#FFF !important;
-  }
-
-  .hero {
+  section.hero {
     background: #e9eef7 url("../images/solnedgang.jpg");
     overflow: hidden;
     position: relative;
@@ -89,75 +109,5 @@ body {
           font-size: 2rem;
         }
       }
-  }
-
-  header {
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    width: 100%;
-    background-color: #FFF;
-
-    &.node {
-      border-bottom: thin solid #76879D
-    }
-  }
-
-  @media (max-width: 63em) {
-    header h1 {
-      padding-top: .4rem;
-      font-size: 1.3rem;
-      margin-bottom: 0rem !important
-    }
-  }
-
-  .top-bar {
-    background-color: #FFF !important;
-    width: 100%;
-    @media (max-width: 63em) {
-      border-bottom: thin solid #76879D;
-    }
-
-    ul {
-      background-color: #FFF !important
-    }
-
-    .top-bar-right {
-      margin-top: 0.6rem
-    }
-
-    .top-bar-left a {
-      font-size: 150%
-    }
-  }
-
-  section.node {
-    margin-top: 7rem
-  }
-
-  &.path-node {
-    h1.page-header {
-      margin-top: 2.5rem !important;
-    }
-  }
-
-  h1 {
-    font-size: 2.5rem
-  }
-
-  section.block-itotko-content div.field-node--field-image {
-    float: left;
-    margin-right: 2rem
-  }
-
-  div.field--name-field-tags {
-    div.field--item {
-      visibility: hidden;
-    }
-  }
-
-  div.region-content {
-    max-width: 106rem;
-    padding: 0 13rem;
   }
 }
