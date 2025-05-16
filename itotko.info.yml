@@ -2,11 +2,11 @@ name: itotko
 type: theme
 description: 'itotko subtheme based on Bootstrap 5 theme.'
 core_version_requirement: '^8.9 || ^9 || ^10'
-'base theme': bootstrap5
+'base theme': bootstrap
 libraries:
   - itotko/global-styling
 stylesheets-remove:
-  - '@bootstrap5/css/style.css'
+  - '@bootstrap/css/style.css'
 regions:
   header: Header
   nav_branding: 'Navigation branding region'
