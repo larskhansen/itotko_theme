@@ -7,7 +7,7 @@
 @import "variables_drupal";
 
 // 3. Bootstrap itself
-@import "bootstrap/scss/bootstrap";
+@use "bootstrap/scss/bootstrap";
 
 body {
 
