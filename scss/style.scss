@@ -1,13 +1,13 @@
 @charset "UTF-8";
-// Sub theme styling.
-@import 'variables_drupal';
 
-// Bootstrap overriden variables.
-// @see https://getbootstrap.com/docs/5.1/customize/sass/#variable-defaults.
-@import 'variables_bootstrap';
+// 1. Bootstrap variables override (MÅ komme før bootstrap)
+@import "variables_bootstrap";
 
-// Include bootstrap.
-@import '../../../../themes/contrib/bootstrap/scss/base.scss';
+// 2. Drupal-specific variables
+@import "variables_drupal";
+
+// 3. Bootstrap itself
+@import "bootstrap/scss/bootstrap";
 
 body {
 
