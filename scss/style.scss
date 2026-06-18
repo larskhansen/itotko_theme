@@ -1,10 +1,8 @@
-@charset "UTF-8";
-
 // 1. Bootstrap variables override (MÅ komme før bootstrap)
-@import "variables_bootstrap";
+@use "variables_bootstrap";
 
 // 2. Drupal-specific variables
-@import "variables_drupal";
+@use "variables_drupal";
 
 // 3. Bootstrap itself
 @use "bootstrap/scss/bootstrap";
