@@ -1,7 +1,6 @@
 {
   "devDependencies": {
-    "sass": "^1.69.0",
-    "bootstrap": "^5.3.0"
+    "sass": "^1.69.0"
   },
   "scripts": {
     "build": "sass --load-path=node_modules scss/style.scss css/style.css"
